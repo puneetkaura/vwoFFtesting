@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="/static/css/heroic-features.css" rel="stylesheet">
 
 </head>
 
@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">VWO Demo</a>
+      <a class="navbar-brand" href="#">VWO demo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,14 +53,12 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
-      <h1 class="display-3">Feature rollout demo</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+      <h1 class="display-3">Conversion successful! for user : {{dict.user_id}}</h1>
+<!--      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>-->
     </header>
 
-
-
     <!-- Page Features -->
-    <div class="row text-center">
+<!--    <div class="row text-center">-->
 
 <!--      <div class="col-lg-3 col-md-6 mb-4">-->
 <!--        <div class="card h-100">-->
@@ -75,33 +73,49 @@
 <!--        </div>-->
 <!--      </div>-->
 
+<!--      <div class="col-lg-3 col-md-6 mb-4">-->
+<!--        <div class="card h-100">-->
+<!--          <img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title">Card title</h4>-->
+<!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>-->
+<!--          </div>-->
+<!--          <div class="card-footer">-->
+<!--            <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
+<!--      <div class="col-lg-3 col-md-6 mb-4">-->
+<!--        <div class="card h-100">-->
+<!--          <img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title">Card title</h4>-->
+<!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>-->
+<!--          </div>-->
+<!--          <div class="card-footer">-->
+<!--            <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-    <div class="row text-center">
+<!--      <div class="col-lg-3 col-md-6 mb-4">-->
+<!--        <div class="card h-100">-->
+<!--          <img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title">Card title</h4>-->
+<!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>-->
+<!--          </div>-->
+<!--          <div class="card-footer">-->
+<!--            <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      {% for user_id,fe in fed.items()     -%}
+<!--    </div>-->
+<!--    &lt;!&ndash; /.row &ndash;&gt;-->
 
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="card-title">User {{user_id}}</h4>
-            <p class="card-text">DEFAULT FEATURE</p>
-          </div>
-          <div class="card-footer">
-            {% if fe  -%}
-            <a href="#" class="btn btn-primary">NEW FEATURE ENABLED</a>
-            {%- endif %}
-          </div>
-        </div>
-      </div>
-
-      {% endfor %}
-
-    </div>
-    <!-- /.row -->
-
-  </div>
+<!--  </div>-->
   <!-- /.container -->
 
 <!--  &lt;!&ndash; Footer &ndash;&gt;-->

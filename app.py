@@ -49,7 +49,7 @@ def vwo_rollout():
     fed = {}
 
 
-    for i in range(1,17):
+    for i in range(1,101):
         is_feature_enabled = vwo_client_instance.is_feature_enabled('vwo_demo_blue_button_campaign_key', str(i), )
         print(is_feature_enabled, i)
         fed[str(i)] = is_feature_enabled
@@ -67,4 +67,4 @@ def conversion_success(user_id):
     return render_template('conversion.html', dict = {'user_id':user_id})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

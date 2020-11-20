@@ -31,7 +31,7 @@ def vwo_abtest(user_id):
     variation_name = vwo_client_instance.get_variation_name("ab_test_demo", user_id)
     dict = {
         'user_id': user_id,
-        'variation_name': variation_name
+        'variation_name': variation_name.upper()
     }
     return render_template('vwo_abtest.html', dict=dict)
 
@@ -43,7 +43,7 @@ def vwo_ff(user_id):
 def vwo_rollout():
     settings_file = vwo.get_settings_file('518132', os.environ.get('SDK_KEY'))
 
-    vwo_client_instance = vwo.vwo.VWO(settings_file=settings_file, user_storage=None, is_development_mode=True,
+    vwo_client_instance = vwo.vwo.VWO(settings_file=settings_file, user_storage=None, is_development_mode=False ,
                                       should_track_returning_user=True, goal_type_to_track=vwo.GOAL_TYPES.ALL)
 
     fed = {}
@@ -67,4 +67,4 @@ def conversion_success(user_id):
     return render_template('conversion.html', dict = {'user_id':user_id})
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

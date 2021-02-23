@@ -1,0 +1,5 @@
+vwo-python-sdk
+redis
+launchdarkly-server-sdk
+python-dotenv
+flask
